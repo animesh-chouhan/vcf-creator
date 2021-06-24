@@ -34,7 +34,7 @@ def vcard_formatter(values):
     ret.append("END:VCARD")
     return "\n".join(ret)
     
-def vcard_generator(filename="sample.csv"):
+def vcard_generator(filename):
     """
     Parameters
     ---------

@@ -1,5 +1,5 @@
 import argparse
-from .vcf_creator import  vcard_generator
+from .vcf import  vcard_generator
 
 usage = "usage: vcf_creator [options]"
 parser = argparse.ArgumentParser(usage)
