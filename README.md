@@ -22,7 +22,7 @@ python3 -m vcf_creator sample.csv
 
 To install it right away, type:
 ```sh
-pip install vcf_creator
+pip3 install vcf_creator
 ```
 
 ### Help:
@@ -33,7 +33,7 @@ python3 -m vcf_creator --help
 ### Running the script:
 
 ```sh
-python -m vcf_creator <csv-file-name>
+python3 -m vcf_creator <csv-file-name>
 ```
 ## CSV File Instructions
 

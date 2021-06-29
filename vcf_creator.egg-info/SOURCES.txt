@@ -9,3 +9,5 @@ vcf_creator.egg-info/PKG-INFO
 vcf_creator.egg-info/SOURCES.txt
 vcf_creator.egg-info/dependency_links.txt
 vcf_creator.egg-info/top_level.txt
+vcf_creator/tests/__init__.py
+vcf_creator/tests/test_vcf.py
