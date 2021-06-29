@@ -29,6 +29,17 @@ pip install vcf_creator
 ```sh
 python -m vcf_creator <csv-file-name>
 ```
+## CSV File Instructions
+
+1. The contact CSV file can have the following headers all in smallcase:
+    - name
+    - phone
+    - organisation
+    - email
+    - address
+    - birthday
+2. The headers can be in any order
+3. Make sure that no fields are empty
 
 ## Usage example
 Click on the play button to see an example download.
