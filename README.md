@@ -15,7 +15,7 @@ git clone https://github.com/animesh-chouhan/vcf-creator.git
 cd vcf-creator
 
 # Run the sample csv file
-python -m vcf_creator sample.csv
+python3 -m vcf_creator sample.csv
 ```
 
 ### Installation:
@@ -24,6 +24,12 @@ To install it right away, type:
 ```sh
 pip install vcf_creator
 ```
+
+### Help:
+```sh
+python3 -m vcf_creator --help
+```
+
 ### Running the script:
 
 ```sh
