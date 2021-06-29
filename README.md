@@ -1,7 +1,7 @@
 # vcf-creator
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/vcf_creator)
-![license](https://img.shields.io/github/license/animesh-chouhan/vcf_creator)
+![license](https://img.shields.io/github/license/animesh-chouhan/vcf-creator)
 
 >Generate vCard file from CSV
 
@@ -37,15 +37,15 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Contributing
 
-1. Fork the repo (<https://github.com/animesh-chouhan/vcf_creator/>)
+1. Fork the repo (<https://github.com/animesh-chouhan/vcf-creator/>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
 <!-- Markdown link & img dfn's -->
-[license]: https://img.shields.io/github/license/animesh-chouhan/vcf_creator
-[wiki]: https://github.com/animesh-chouhan/vcf_creator/wiki
+[license]: https://img.shields.io/github/license/animesh-chouhan/vcf-creator
+[wiki]: https://github.com/animesh-chouhan/vcf-creator/wiki
 
 ## License
 MIT License
