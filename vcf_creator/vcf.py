@@ -7,8 +7,7 @@ ATTRIBUTES = {
     "phone": "TEL;WORK;VOICE",
     "email": "EMAIL",
     "address": "ADR;HOME",
-    "birthday": "BDAY",
-    "anniversary": "ANNIVERSARY",
+    "birthday": "BDAY"
 }
 
 attributes_present = {}
@@ -50,7 +49,7 @@ def vcard_generator(filename):
     # Check if the file exists
     if not os.path.isfile(filename):                        
         print("File doesn't exist.")
-        return 0
+        return -1
     else:
         print("File found. Processing...")
         with open(filename, newline='') as csvfile:
@@ -61,12 +60,17 @@ def vcard_generator(filename):
                 csvfile.seek(0)
             except csv.Error:
                 print("File appears not to be in csv format.")
-                return 0
+                return -1
 
             # Read the csv file
             reader = csv.reader(csvfile, dialect)
             # Get header
             header = reader.__next__()
+            # Name is required
+            if "name" not in header:
+                print("Header not supported.")
+                return -1
+
             # Iterate over the rows
             for i, attr in enumerate(header):
                 attributes_present[attr] = i

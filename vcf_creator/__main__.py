@@ -27,7 +27,7 @@ else:
   out_file = args.out + ".vcf"
 
 res = vcard_generator(args.filename)
-if res != 0:
+if res != -1:
   with open(out_file , "w+") as file:
     file.write(res)
     print("Done processing.")
