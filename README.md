@@ -35,6 +35,17 @@ python3 -m vcf_creator --help
 ```sh
 python3 -m vcf_creator <csv-file-name>
 ```
+
+### Import the module in your project:
+
+```python
+from vcf_creator import vcard_formatter, vcard_generator
+
+vcard_formatter(arguments)
+vcard_generator(arguments)
+
+```
+
 ## CSV File Instructions
 
 1. The contact CSV file can have the following headers all in smallcase:
