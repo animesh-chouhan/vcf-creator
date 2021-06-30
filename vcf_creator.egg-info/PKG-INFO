@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: vcf-creator
-Version: 1.0.4
+Version: 1.0.5
 Summary: Generate vCard file from CSV
 Home-page: https://github.com/animesh-chouhan/vcf-creator
 Author: Animesh Singh Chouhan

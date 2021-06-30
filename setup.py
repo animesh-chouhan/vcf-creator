@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="vcf-creator",
-    version="1.0.4",
+    name="vcf_creator",
+    version="1.0.5",
     author="Animesh Singh Chouhan",
     author_email="animeshsingh.iitkgp@gmail.com",
     description="Generate vCard file from CSV",
