@@ -65,17 +65,18 @@ def vcard_generator(filename):
             # Read the csv file
             reader = csv.reader(csvfile, dialect)
             # Get header
-            header = reader.__next__()
+            header = [h.strip() for h in reader.__next__()]
             # Name is required
             if "Name" not in header:
                 print("Header not supported.")
                 return -1
 
-            # Iterate over the rows
+            # Set attributes_present
             for i, attr in enumerate(header):
                 attributes_present[attr] = i
             
             ret = []
+            # Iterate over the rows
             for row in reader:
                 ret.append(vcard_formatter(row))
             return "\n".join(ret)
