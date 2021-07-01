@@ -2,12 +2,12 @@ import csv
 import os.path
 
 ATTRIBUTES = {
-    "Name": "FN",
-    "Organisation": "ORG",
-    "Phone": "TEL;WORK;VOICE",
-    "Email": "EMAIL",
-    "Address": "ADR;HOME",
-    "Birthday": "BDAY"
+    "name": "FN",
+    "organisation": "ORG",
+    "phone": "TEL;WORK;VOICE",
+    "email": "EMAIL",
+    "address": "ADR;HOME",
+    "birthday": "BDAY"
 }
 
 attributes_present = {}
@@ -65,9 +65,10 @@ def vcard_generator(filename):
             # Read the csv file
             reader = csv.reader(csvfile, dialect)
             # Get header
-            header = [h.strip() for h in reader.__next__()]
+            header = [h.strip().lower() for h in reader.__next__()]
+            print(header)
             # Name is required
-            if "Name" not in header:
+            if "name" not in header:
                 print("Header not supported.")
                 return -1
 
