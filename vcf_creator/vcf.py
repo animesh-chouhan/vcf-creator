@@ -66,7 +66,6 @@ def vcard_generator(filename):
             reader = csv.reader(csvfile, dialect)
             # Get header
             header = [h.strip().lower() for h in reader.__next__()]
-            print(header)
             # Name is required
             if "name" not in header:
                 print("Header not supported.")
