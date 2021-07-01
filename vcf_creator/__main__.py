@@ -1,5 +1,9 @@
 import argparse
+import logging
 from .vcf import  vcard_generator
+
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
+
 
 usage = "vcf_creator"
 parser = argparse.ArgumentParser(usage)
@@ -30,4 +34,7 @@ res = vcard_generator(args.filename)
 if res != -1:
   with open(out_file , "w+") as file:
     file.write(res)
-    print("Done processing.")
+    # print("vCard file written.")
+    logging.info("vCard file written.")
+else:
+  logging.error("Exiting.")

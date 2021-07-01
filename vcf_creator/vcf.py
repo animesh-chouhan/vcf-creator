@@ -1,5 +1,8 @@
 import csv
 import os.path
+import logging
+
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 ATTRIBUTES = {
     "name": "FN",
@@ -48,18 +51,23 @@ def vcard_generator(filename):
 
     # Check if the file exists
     if not os.path.isfile(filename):                        
-        print("File doesn't exist.")
+        # print("File doesn't exist.")
+        logging.error("File doesn't exist.")
         return -1
     else:
-        print("File found. Processing...")
+        # print("File found. Processing...")
+        logging.info("File found. Processing...")
         with open(filename, newline='') as csvfile:
             # Perform various checks on the csv dialect
             try:
-                dialect = csv.Sniffer().sniff(csvfile.readline())
+                head = csvfile.readline()
+                logging.info("Header is " + head.strip())
+                dialect = csv.Sniffer().sniff(head)
                 # Reset the read position back to the start
                 csvfile.seek(0)
             except csv.Error:
-                print("File appears not to be in csv format.")
+                # print("File appears not to be in csv format.")
+                logging.error("File appears not to be in csv format.")
                 return -1
 
             # Read the csv file
@@ -68,7 +76,8 @@ def vcard_generator(filename):
             header = [h.strip().lower() for h in reader.__next__()]
             # Name is required
             if "name" not in header:
-                print("Header not supported.")
+                # print("Header not supported.")
+                logging.error("Header not supported.")
                 return -1
 
             # Set attributes_present
@@ -79,4 +88,7 @@ def vcard_generator(filename):
             # Iterate over the rows
             for row in reader:
                 ret.append(vcard_formatter(row))
+
+            # print("Done processing.")
+            logging.info("Done processing.")
             return "\n".join(ret)
