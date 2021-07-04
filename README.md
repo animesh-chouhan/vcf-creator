@@ -37,6 +37,11 @@ pip3 install vcf_creator
 ```sh
 python3 -m vcf_creator --help
 ```
+OR
+
+```sh
+vcf_creator --help
+```
 
 ### Running the script:
 
@@ -67,7 +72,7 @@ vcard_generator(arguments)
     - organisation
     - email
     - address
-    - birthday
+    - birthday (mm/dd/yyyy)
 2. The headers can be in any order
 3. Make sure that no fields are empty
 
