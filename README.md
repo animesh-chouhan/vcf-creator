@@ -17,6 +17,14 @@ cd vcf-creator
 # Run the sample csv file
 python3 -m vcf_creator sample.csv
 ```
+### Running tests
+```sh
+# If in vc-creator folder
+cd vcf_creator/tests
+
+# Run the test
+python3 test_vcf.py
+```
 
 ### Installation:
 
@@ -34,6 +42,11 @@ python3 -m vcf_creator --help
 
 ```sh
 python3 -m vcf_creator <csv-file-name>
+```
+OR
+
+```sh
+vcf_creator <csv-file-name>
 ```
 
 ### Import the module in your project:
