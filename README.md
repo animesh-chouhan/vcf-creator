@@ -77,8 +77,9 @@ vcard_generator(arguments)
 3. Make sure that no fields are empty
 
 ## Usage example
-Click on the play button to see an example download.
-[![asciicast](https://asciinema.org/a/422828.svg)](https://asciinema.org/a/422828)
+![preview](assets/preview.gif)
+<!-- Click on the play button to see an example download.
+[![asciicast](https://asciinema.org/a/422828.svg)](https://asciinema.org/a/422828) -->
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
 
