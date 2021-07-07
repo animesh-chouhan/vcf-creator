@@ -1,9 +1,10 @@
-import os 
+import os
 import unittest
 from vcf_creator.vcf import *
 
 csv = os.path.join(os.path.dirname(__file__), 'test.csv')
 vcf = os.path.join(os.path.dirname(__file__), 'test.vcf')
+
 
 class TestVcf(unittest.TestCase):
 
@@ -11,7 +12,8 @@ class TestVcf(unittest.TestCase):
         result = vcard_generator(csv)
         with open(vcf, "r") as file:
             text = file.read()
-        self.assertEqual(result, text)       
+        self.assertEqual(result, text)
+
 
 if __name__ == '__main__':
     unittest.main()

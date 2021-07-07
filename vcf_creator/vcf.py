@@ -15,6 +15,7 @@ ATTRIBUTES = {
 
 attributes_present = {}
 
+
 def vcard_formatter(values):
     """
     Parameters
@@ -31,26 +32,28 @@ def vcard_formatter(values):
 
     for attr in ATTRIBUTES.keys():
         if attr in attributes_present.keys():
-            ret.append(ATTRIBUTES[attr] + ":" + values[attributes_present[attr]])
-    
+            ret.append(ATTRIBUTES[attr] + ":" +
+                       values[attributes_present[attr]])
+
     ret.append("END:VCARD")
     return "\n".join(ret)
-    
+
+
 def vcard_generator(filename):
     """
     Parameters
     ---------
     filename: csv file to process
-       
+
     Returns
     -------
     str
         a string of vcard formatted data
-    
+
     """
 
     # Check if the file exists
-    if not os.path.isfile(filename):                        
+    if not os.path.isfile(filename):
         # print("File doesn't exist.")
         logging.error("File doesn't exist.")
         return -1
@@ -83,7 +86,7 @@ def vcard_generator(filename):
             # Set attributes_present
             for i, attr in enumerate(header):
                 attributes_present[attr] = i
-            
+
             ret = []
             # Iterate over the rows
             for row in reader:
