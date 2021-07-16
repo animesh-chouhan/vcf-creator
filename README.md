@@ -2,6 +2,7 @@
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/vcf_creator)
 ![PyPI](https://img.shields.io/pypi/v/vcf_creator)
+![Travis (.org)](https://img.shields.io/travis/animesh-chouhan/vcf-creator)
 ![license](https://img.shields.io/github/license/animesh-chouhan/vcf-creator)
 
 >Generate vCard file from CSV
