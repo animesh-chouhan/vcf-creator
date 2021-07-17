@@ -7,6 +7,11 @@
 
 >Generate vCard file from CSV
 
+## Usage example
+![preview](https://raw.githubusercontent.com/animesh-chouhan/vcf-creator/main/assets/preview.gif)
+<!-- Click on the play button to see an example download.
+[![asciicast](https://asciinema.org/a/422828.svg)](https://asciinema.org/a/422828) -->
+
 ## Setup
 
 ### Cloning the repository:
@@ -76,13 +81,6 @@ vcard_generator(arguments)
     - birthday (mm/dd/yyyy)
 2. The headers can be in any order
 3. Make sure that no fields are empty
-
-## Usage example
-![preview](https://raw.githubusercontent.com/animesh-chouhan/vcf-creator/main/assets/preview.gif)
-<!-- Click on the play button to see an example download.
-[![asciicast](https://asciinema.org/a/422828.svg)](https://asciinema.org/a/422828) -->
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Contributing
 
