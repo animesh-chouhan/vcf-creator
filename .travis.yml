@@ -26,7 +26,7 @@ install:
 # 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
 script: 
   - python3 vcf_creator/tests/test_vcf.py || python vcf_creator/tests/test_vcf.py
-  - coverage run tests.py
+  - coverage run vcf_creator/tests/test_vcf.py
   
 # Push the results back to codecov
 after_success:
