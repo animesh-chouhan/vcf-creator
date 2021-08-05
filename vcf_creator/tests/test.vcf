@@ -1,6 +1,7 @@
 BEGIN:VCARD
 VERSION:4.0
 FN:Samuel Short
+N:Samuel Short
 ORG:Convallis Inc.
 TEL;WORK;VOICE:+91 9499109040
 EMAIL:Phasellus@suscipitnonummyFusce.co.uk
@@ -10,6 +11,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Mia Jensen
+N:Mia Jensen
 ORG:Ut Pellentesque Eget Corp.
 TEL;WORK;VOICE:+91 7680256715
 EMAIL:nisi.Cum.sociis@NullamenimSed.ca
@@ -19,6 +21,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Kirk Hampton
+N:Kirk Hampton
 ORG:Fusce Dolor Corporation
 TEL;WORK;VOICE:+91 8469919078
 EMAIL:aliquet.vel@ligula.co.uk
@@ -28,6 +31,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Keiko Cochran
+N:Keiko Cochran
 ORG:A Auctor Corp.
 TEL;WORK;VOICE:+91 3265921147
 EMAIL:elementum.dui.quis@sitamet.com
@@ -37,6 +41,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Jescie Weiss
+N:Jescie Weiss
 ORG:Orci Luctus Et Corp.
 TEL;WORK;VOICE:+91 8591400642
 EMAIL:cursus.Integer.mollis@nisiAenean.com
@@ -46,6 +51,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Anastasia Summers
+N:Anastasia Summers
 ORG:Euismod Urna Ltd
 TEL;WORK;VOICE:+91 4770035313
 EMAIL:non.arcu.Vivamus@laciniavitae.co.uk
@@ -55,6 +61,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Sophia Shepherd
+N:Sophia Shepherd
 ORG:Rhoncus Institute
 TEL;WORK;VOICE:+91 8644953797
 EMAIL:mauris@tincidunt.org
@@ -64,6 +71,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Pearl Sosa
+N:Pearl Sosa
 ORG:Blandit Mattis Associates
 TEL;WORK;VOICE:+91 7423971657
 EMAIL:vel.lectus@diam.com
@@ -73,6 +81,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Teegan Ferguson
+N:Teegan Ferguson
 ORG:Feugiat Non Lobortis Incorporated
 TEL;WORK;VOICE:+91 0301997675
 EMAIL:amet@hymenaeosMaurisut.edu
@@ -82,6 +91,7 @@ END:VCARD
 BEGIN:VCARD
 VERSION:4.0
 FN:Kirsten Golden
+N:Kirsten Golden
 ORG:Arcu Vel Quam Associates
 TEL;WORK;VOICE:+91 5629365703
 EMAIL:elit@Nulla.edu

@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.INFO)
 
 ATTRIBUTES = {
-    "name": "FN",
+    "name": ["FN", "N"],
     "organisation": "ORG",
     "phone": "TEL;WORK;VOICE",
     "email": "EMAIL",
@@ -13,10 +13,20 @@ ATTRIBUTES = {
     "birthday": "BDAY"
 }
 
+# ATTRIBUTES = {
+#     "FN": "name",
+#     "N": "name",
+#     "ORG": "organisation",
+#     "TEL;WORK;VOICE": "phone",
+#     "EMAIL": "email",
+#     "ADR;HOME": "address",
+#     "BDAY": "birthday"
+# }
+
 attributes_present = {}
 
 
-def vcard_formatter(values):
+def vcard_formatter(row):
     """
     Parameters
     ---------
@@ -30,10 +40,16 @@ def vcard_formatter(values):
 
     ret = ["BEGIN:VCARD", "VERSION:4.0"]
 
-    for attr in ATTRIBUTES.keys():
-        if attr in attributes_present.keys():
-            ret.append(ATTRIBUTES[attr] + ":" +
-                       values[attributes_present[attr]])
+    for vcf_attr in ATTRIBUTES.keys():
+        if vcf_attr in attributes_present.keys():
+            # Taking FN and N in account
+            if type(ATTRIBUTES[vcf_attr]) == list:
+                for multiple in ATTRIBUTES[vcf_attr]:
+                    ret.append(multiple + ":" +
+                               row[attributes_present[vcf_attr]])
+            else:
+                ret.append(ATTRIBUTES[vcf_attr] + ":" +
+                           row[attributes_present[vcf_attr]])
 
     ret.append("END:VCARD")
     return "\n".join(ret)

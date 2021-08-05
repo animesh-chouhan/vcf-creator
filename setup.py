@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="vcf-creator",
-    version="1.1.0",
+    version="1.1.1",
     author="Animesh Singh Chouhan",
     author_email="animeshsingh.iitkgp@gmail.com",
     description="Generate vCard file from CSV",
