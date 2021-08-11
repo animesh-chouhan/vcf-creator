@@ -5,7 +5,7 @@
 ![Travis (.org)](https://img.shields.io/travis/animesh-chouhan/vcf-creator)
 ![license](https://img.shields.io/github/license/animesh-chouhan/vcf-creator)
 
->Generate vCard file from CSV
+> Generate vCard file from CSV
 
 ## Usage example
 ![preview](https://raw.githubusercontent.com/animesh-chouhan/vcf-creator/main/assets/preview.gif)
